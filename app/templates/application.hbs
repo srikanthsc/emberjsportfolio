@@ -1,0 +1,41 @@
+{{page-title "Srikanth's Portfolio"}}
+
+{{#if (media 'isDesktop')}}
+<div class="desktop-container">
+  <div class="menu">
+    <nav>
+      <LinkTo class="no-underline home" @route="index">Srikanth.C</LinkTo>
+      <LinkTo @route="educations">Educations</LinkTo>
+      <LinkTo @route="workexperiences">Work Experiences</LinkTo>
+      <LinkTo @route="contact">Contact</LinkTo>
+    </nav>
+    <div class="links">
+      <a class="" href="mailto:srikanthcollaty92@gmail.com">srikanthcollaty92@gmail.com</a>
+    </div>
+  </div>
+
+  {{outlet}}
+</div>
+{{else}}
+<MobileMenuWrapper as |mmw|>
+  <mmw.MobileMenu as |mm|>
+    <div class="menu mobile">
+      {{!-- template-lint-disable no-duplicate-landmark-elements --}}
+      <nav>
+        <mm.LinkTo class="no-underline home" @route="index">Srikanth.C</mm.LinkTo>
+        <mm.LinkTo @route="educations">Educations</mm.LinkTo>
+        <mm.LinkTo @route="workexperiences">Work Experiences</mm.LinkTo>
+        <mm.LinkTo @route="contact">Contact</mm.LinkTo>
+      </nav>
+      <div class="links">
+        <a class="" href="mailto:srikanthcollaty92@gmail.com">srikanthcollaty92@gmail.com</a>
+      </div>
+    </div>
+  </mmw.MobileMenu>
+
+  <mmw.Content class="mobile-container">
+    <mmw.Toggle class="menu-button">Menu</mmw.Toggle>
+    {{outlet}}
+  </mmw.Content>
+</MobileMenuWrapper>
+{{/if}}

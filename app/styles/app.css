@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Jura:wght@400;700&display=swap');
+/* Add these styles to your stylesheet */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Set your desired background color */
+}
+/* Add these styles to your stylesheet */
+
+.experience-section {
+  margin-bottom: 20px;
+}
+
+.experience-section h2 {
+  color: #333; /* Set your desired text color */
+}
+
+.experience-section p {
+  margin: 10px 0;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+  margin-bottom: 10px;
+}
+
+/* Desktop styles */
+.desktop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dd0f0f; /* Set your desired background color */
+  color: white;
+  padding: 10px;
+}
+
+.menu nav {
+  display: flex;
+}
+
+.menu nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.menu .links {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile styles */
+.mobile-container {
+  padding: 20px;
+}
+
+.menu.mobile {
+  background-color: #db1d1d; /* Set your desired background color */
+  color: white;
+  padding: 10px;
+}
+
+.menu.mobile nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu.mobile nav a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.menu-button {
+  background-color: #ee1a1a; /* Set your desired background color */
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+  .desktop-container {
+    display: none;
+  }
+}
+
+:root {
+  --primary-color: #171516;
+}
+.gray-background {
+  background-color: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #fff;
+}
+
+.desktop-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 20px;
+  gap: 48px;
+}
+
+.mobile-container {
+  margin: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+nav > a {
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: var(--primary-color);
+}
+.mobile-menu-wrapper {
+  BACKGROUND-COLOR: rgb(17, 243, 243);
+}
+nav > a.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+nav > a.home {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-family: Jura, sans-serif;
+  font-weight: bold;
+}
+
+nav > a.active.no-underline {
+  border: none;
+}
+
+.menu.mobile {
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.menu.mobile > .links {
+  margin: 16px;
+}
+
+.menu.mobile > nav > a {
+  padding-left: 16px;
+}
+
+.menu-button {
+  border: 3px solid var(--primary-color);
+  font-family: Jura, sans-serif;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 4px 16px;
+  color: var(--primary-color);
+  background-color: unset;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-button:hover,
+.menu-button:active {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.content {
+  max-width: 80ch;
+  line-height: 1.5;
+}
+
+.picture {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.picture.large {
+  max-width: 360px;
+  width: 100%;
+}
+
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
